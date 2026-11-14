@@ -1,0 +1,80 @@
+name: Juan David Cárdenas Z.
+affiliation: Universidad del Pacífico alumnus
+location: Peru
+degree: Information Engineering
+email: jd.cardenasz@alum.up.edu.pe
+scholar: https://scholar.google.com/citations?user=2zGxBxEAAAAJ&hl=en
+orcid: https://orcid.org/0000-0002-3801-4227
+github: https://github.com/GitterOP/
+linkedin: https://www.linkedin.com/in/juandavidcardenas/
+cv: /files/cv/juan-david-cardenas-cv.pdf
+photo: /assets/images/juan-david-cardenas.png
+photo_alt: Portrait of Juan David Cárdenas Z.
+intro: >-
+  I hold a bachelor’s degree in Information Engineering from Universidad del
+  Pacífico in Peru, where I worked as a research assistant. My research includes
+  building object-based world models for reinforcement learning and adapting
+  vision transformers for hyperspectral image classification. I am particularly
+  interested in how theories of human learning from psychology and neuroscience
+  can guide the design of reinforcement learning algorithms.
+academic_background: >-
+  I graduated first in my Information Engineering class at Universidad del
+  Pacífico, with a cumulative weighted average of 18.18/20. I received the Robert
+  Maes Award for ranking first in the degree program in 2021, 2022, and 2023,
+  and the Robert Maes Special Award for ranking first in my graduating class
+  in 2025-I.
+experience_intro: >-
+  My research experience spans object-based world models, hyperspectral
+  representation learning, and applied data analysis. Across these projects,
+  I have contributed to scientific software, experimental design, data
+  preparation, analysis, and manuscript writing.
+interests:
+  - title: World models
+    detail: Learning representations for sequential decision-making.
+  - title: Representation learning
+    detail: Understanding and evaluating useful latent spaces.
+  - title: Human & artificial learning
+    detail: How psychology and neuroscience can inform reinforcement learning.
+education:
+  - institution: Universidad del Pacífico
+    location: Lima, Peru
+    degree: Bachelor’s Degree in Information Engineering
+    dates: 2020–2025
+    details:
+      - Ranked first in the graduating class.
+      - Cumulative weighted average of 18.18/20.
+  - institution: Colegio de Alto Rendimiento (COAR) Huancavelica
+    location: Peru
+    degree: International Baccalaureate Diploma
+    dates: "2019"
+    details:
+      - IB Diploma score of 40/45.
+honors:
+  - title: Robert Maes Special Award
+    year: 2025-I
+    detail: Awarded for ranking first in the graduating class at Universidad del Pacífico.
+  - title: Robert Maes Award
+    year: 2021, 2022 & 2023
+    detail: Ranked first in the Information Engineering degree program in each of these years.
+  - title: BCP Scholarship
+    year: 2020–2025
+    detail: Competitively awarded full scholarship covering the entire degree.
+experience:
+  - title: Research Assistant and Collaborator
+    organization: Universidad del Pacífico Faculty
+    dates: April 2023–present
+    detail: Institutional appointment through March 2026; continuing as an external collaborator. Scientific software development, data preparation, experimentation, analysis, and manuscript preparation.
+  - title: Undergraduate Intern · Internal Audit Division
+    organization: Banco de Crédito BCP, Lima, Peru
+    dates: January–March 2023
+    detail: Supported extract, transform, and load (ETL) processes for internal auditing.
+skills:
+  - area: Scientific programming
+    tools: Python, NumPy, pandas, SciPy
+  - area: Machine learning
+    tools: PyTorch, TensorFlow, scikit-learn
+  - area: Analysis & visualization
+    tools: Statistical analysis, Matplotlib, Seaborn
+  - area: Experimentation
+    tools: Hyperparameter search, cross-validation, multiple random seeds, concurrent CPU/GPU execution
+languages: Native Spanish; English B2 — Cambridge First Certificate in English (2018).

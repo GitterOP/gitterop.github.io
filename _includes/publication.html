@@ -1,0 +1,18 @@
+<article class="publication" id="{{ include.paper.id }}" data-publication="{{ include.paper.id }}">
+  <div class="publication-year">{{ include.paper.year }}</div>
+  <div class="publication-content">
+    <h3><a href="https://doi.org/{{ include.paper.doi }}">{{ include.paper.title }}</a></h3>
+    <p class="authors">{{ include.paper.authors }}</p>
+    <p class="venue"><em>{{ include.paper.venue }}</em>, {{ include.paper.citation }} ({{ include.paper.year }}).</p>
+    <p class="study-summary">{{ include.paper.study_summary }}</p>
+    <details class="contribution">
+      <summary>My contribution</summary>
+      <p>{{ include.paper.personal_contribution }}</p>
+    </details>
+    {% include paper-links.html paper=include.paper %}
+    <details class="citation">
+      <summary>BibTeX</summary>
+      <pre><code>{{ include.paper.bibtex | escape }}</code></pre>
+    </details>
+  </div>
+</article>

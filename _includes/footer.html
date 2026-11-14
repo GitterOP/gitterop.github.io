@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="shell footer-top">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch.</h2>
+      <a class="email-link" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+    </div>
+    <div class="footer-profile">
+      <p>{{ site.data.profile.name }}<br><span>{{ site.data.profile.affiliation }} · Peru</span></p>
+      <ul class="social-links" aria-label="Academic profiles">
+        <li><a href="{{ site.data.profile.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a></li>
+        <li><a href="{{ site.data.profile.orcid }}">ORCID <span aria-hidden="true">↗</span></a></li>
+        <li><a href="{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a></li>
+        <li><a href="{{ site.data.profile.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer-bottom">
+    <small>© {{ 'now' | date: '%Y' }} {{ site.data.profile.name }}</small>
+    <small>A personal academic website.</small>
+  </div>
+</footer>

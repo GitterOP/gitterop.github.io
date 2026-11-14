@@ -1,0 +1,23 @@
+---
+title: Publications
+permalink: /publications/
+description: Journal articles and conference papers by Juan David Cárdenas, with PDFs, DOI links, BibTeX references, and personal contributions.
+---
+<div class="shell">
+  <header class="page-heading">
+    <p class="eyebrow">Published work · 2021–2026</p>
+    <h1>Publications.</h1>
+    <p class="page-lead">Journal articles and conference papers, with links to the full text and a short account of my contribution to each collaboration.</p>
+    <div class="section-jump"><a href="#journal-articles">Journal articles <span aria-hidden="true">↓</span></a><a href="#conference-papers">Conference papers <span aria-hidden="true">↓</span></a></div>
+  </header>
+  <section class="publication-section" aria-labelledby="journal-articles">
+    <div class="list-heading"><h2 id="journal-articles">Journal articles</h2><span>03 publications</span></div>
+    {% assign papers = site.data.publications | where: 'type', 'journal' | sort: 'year' | reverse %}
+    {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
+  </section>
+  <section class="publication-section" aria-labelledby="conference-papers">
+    <div class="list-heading"><h2 id="conference-papers">Conference papers</h2><span>03 publications</span></div>
+    {% assign papers = site.data.publications | where: 'type', 'conference' | sort: 'year' | reverse %}
+    {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
+  </section>
+</div>

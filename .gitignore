@@ -1,0 +1,14 @@
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+/.bundle/
+/vendor/
+/.aws/
+/.codex/
+/.agents/
+/specs/
+/CV_Juan_David_Cardenas_EN.pdf
+/.DS_Store
+__pycache__/
+
+/mkmf.log

@@ -1,0 +1,32 @@
+title: Juan David Cárdenas Z.
+description: Information Engineering graduate of Universidad del Pacífico, working on world models, reinforcement learning, and representation learning.
+url: "https://gitterop.github.io"
+baseurl: ""
+lang: en
+timezone: America/Lima
+encoding: utf-8
+permalink: pretty
+markdown: kramdown
+strict_front_matter: true
+liquid:
+  error_mode: strict
+  strict_filters: true
+plugins:
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - specs
+  - tests
+  - scripts
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - quickstart.md
+  - THIRD_PARTY.md
+  - LICENSE
+  - CV_Juan_David_Cardenas_EN.pdf

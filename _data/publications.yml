@@ -1,0 +1,166 @@
+- id: subset_hsi
+  title: "Subset-Driven Representation Learning for Hyperspectral Image Classification: Assessing Latent Space Quality Through Spectral–Spatial and Transformer-Based Models"
+  short_title: Learning useful representations from less hyperspectral data
+  authors: "Víctor Andrés Ayma Quirita, Víctor Hugo Ayma Quirita, Walter Aliaga, Gilson A. O. P. Costa, and Juan David Cárdenas"
+  year: 2026
+  type: journal
+  venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+  venue_short: IEEE JSTARS
+  citation: "19, 30603–30619"
+  doi: 10.1109/JSTARS.2026.3727184
+  pdf: /files/papers/cardenas-2026-hyperspectral-representations.pdf
+  pdf_label: PDF · Accepted author version
+  featured: true
+  field: Representation learning
+  study_summary: A comparison of classical, autoencoder, and transformer-based representations for hyperspectral classification, examining how training fractions and latent dimensions affect performance and computational cost.
+  question: How much hyperspectral data is needed to learn representations that remain useful for classification?
+  approach: The study compares PCA, AE, AE-Patch, ViT, MAE-ViT, and DINO-ViT across training fractions, latent dimensions, downstream classifiers, and five benchmark datasets.
+  personal_contribution: I adapted RGB implementations of ViT, MAE-ViT, and DINO-ViT for training from scratch on hyperspectral data, proposed including MAE, and designed concurrent GPU representation learning and CPU classification. I also prepared visualizations and a manuscript draft under the coauthors’ scientific guidance.
+  contribution_short: Adapted transformer models to hyperspectral data and designed concurrent GPU/CPU evaluation.
+  finding: Reduced training fractions often preserved competitive classification performance in the evaluated configurations. Full representation-learning partitions could add substantial computational cost for marginal gains; the trade-off depended on the dataset, model, and latent dimension.
+  finding_source: Conclusion, p. 16 of the accepted author version.
+  figure: /assets/images/research/hyperspectral-methodology.png
+  figure_alt: Published methodology showing preparation of hyperspectral subsets, representation learning, feature extraction, classification, and evaluation.
+  figure_caption: "The representation-learning and classification pipeline. Figure 2 from the accepted author version, p. 5."
+  bibtex: |
+    @article{ayma2026subset,
+      author = {Ayma Quirita, Victor Andres and Ayma Quirita, Victor Hugo and Aliaga, Walter and Costa, Gilson A. O. P. and Cárdenas, Juan David},
+      title = {Subset-Driven Representation Learning for Hyperspectral Image Classification: Assessing Latent Space Quality Through Spectral–Spatial and Transformer-Based Models},
+      journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+      year = {2026},
+      volume = {19},
+      pages = {30603--30619},
+      doi = {10.1109/JSTARS.2026.3727184}
+    }
+- id: impacto_migracion
+  title: "Assessing the Impact of Immigration on Peruvian Society: A Quantitative Approach to the Analysis of Economical, Social, Educational and Governmental Indicators (2000–2022)"
+  authors: "Víctor Andrés Ayma Quirita, Walter Aliaga, Víctor Hugo Ayma Quirita, and Juan David Cárdenas"
+  year: 2026
+  type: journal
+  venue: Social Sciences
+  venue_short: Social Sciences
+  citation: "15(7), 464"
+  doi: 10.3390/socsci15070464
+  pdf: /files/papers/cardenas-2026-immigration-indicators.pdf
+  pdf_label: PDF
+  featured: false
+  personal_contribution: I proposed the research topic, assembled the dataset from multiple sources, implemented the statistical analyses, prepared the tables and figures, and wrote the initial manuscript. The methodological design and review-stage extensions were guided by the faculty coauthors.
+  study_summary: An exploratory and econometric assessment of associations between immigration and socioeconomic, educational, and governmental indicators in Peru.
+  bibtex: |
+    @article{ayma2026immigration,
+      author = {Ayma Quirita, Victor Andres and Aliaga, Walter and Ayma Quirita, Victor Hugo and Cárdenas, Juan David},
+      title = {Assessing the Impact of Immigration on Peruvian Society: A Quantitative Approach to the Analysis of Economical, Social, Educational and Governmental Indicators (2000–2022)},
+      journal = {Social Sciences},
+      year = {2026},
+      volume = {15},
+      number = {7},
+      pages = {464},
+      doi = {10.3390/socsci15070464}
+    }
+- id: presidential_sentiment
+  title: "Peruvian Presidential Debates in the Elections of 2021 in Twitter/X: A Sentiment Analysis Approach"
+  authors: "Víctor Andrés Ayma Quirita, Juan David Cárdenas, Walter Aliaga, Víctor Hugo Ayma Quirita, Aramis Palacios, and Rafaela B. Sierra"
+  year: 2024
+  type: journal
+  venue: IEEE Access
+  venue_short: IEEE Access
+  citation: "12, 138386–138398"
+  doi: 10.1109/ACCESS.2024.3465503
+  pdf: /files/papers/cardenas-2024-election-sentiment.pdf
+  pdf_label: PDF
+  featured: false
+  personal_contribution: I expanded the evaluation of vectorizer and classifier configurations, proposed hyperparameters and search ranges with academic supervision, and designed a batch-based procedure to distribute experiments across laboratory computers. I consolidated results, prepared visualizations, and wrote much of the manuscript with faculty review.
+  study_summary: Sentiment analysis of tweets about Peru’s 2021 presidential debates using text representations and machine learning classifiers.
+  bibtex: |
+    @article{ayma2024debates,
+      author = {Ayma Quirita, Victor Andres and Cárdenas, Juan David and Aliaga, Walter and Ayma Quirita, Victor Hugo and Palacios, Aramis and Sierra, Rafaela B.},
+      title = {Peruvian Presidential Debates in the Elections of 2021 in Twitter/X: A Sentiment Analysis Approach},
+      journal = {IEEE Access},
+      year = {2024},
+      volume = {12},
+      pages = {138386--138398},
+      doi = {10.1109/ACCESS.2024.3465503}
+    }
+- id: dreamerv2_objetos
+  title: Learning Object-Based World Models in MsPacman with DreamerV2
+  short_title: Guiding world models with object information
+  authors: "Juan David Cárdenas, Miguel Muñoz, and Junior Fabian"
+  year: 2025
+  type: conference
+  venue: 44th International Conference of the Chilean Computer Science Society (SCCC)
+  venue_short: SCCC
+  citation: "pp. 1–7"
+  doi: 10.1109/SCCC67219.2025.11420437
+  pdf: /files/papers/cardenas-2025-object-world-models.pdf
+  pdf_label: PDF
+  code: https://github.com/GitterOP/DreamerReborn
+  featured: true
+  field: World models & reinforcement learning
+  study_summary: An extension of DreamerV2 that incorporates object information through an additional input channel and reconstructs both images and masks, evaluated in MsPacman with different object categories.
+  question: How does explicit object information shape what a world model learns and how its agent behaves?
+  approach: DreamerV2 receives a grayscale frame and a binary mask for one object category, with a decoder trained to reconstruct both. The study compares agent, collectible, and enemy masks against the original single-channel baseline in MsPacman.
+  personal_contribution: I proposed and designed the object-based extension, integrated OCAtari, carried out the core implementation, and led the experimental design and analysis, with a collaborator and academic supervision.
+  contribution_short: Proposed the extension, integrated OCAtari, and led implementation, experiments, and analysis.
+  finding: Object categories shaped different learning biases. Collectible information encouraged score-seeking behavior, agent-location information favored survival, and ambiguous enemy information could impair learning. These observations are specific to the MsPacman study.
+  finding_source: Conclusions, p. 6 of the paper.
+  figure: /assets/images/research/dreamer-object-masks.png
+  figure_alt: MsPacman game frame and separate binary object masks for the player, enemies, and collectibles, reproduced from the paper.
+  figure_caption: "The game frame and object-category masks used as additional input. Figure 2 from the paper, p. 3."
+  bibtex: |
+    @inproceedings{cardenas2025objects,
+      author = {Cárdenas, Juan David and Muñoz, Miguel and Fabian, Junior},
+      title = {Learning Object-Based World Models in {MsPacman} with {DreamerV2}},
+      booktitle = {2025 44th International Conference of the Chilean Computer Science Society (SCCC)},
+      year = {2025},
+      pages = {1--7},
+      publisher = {IEEE},
+      doi = {10.1109/SCCC67219.2025.11420437}
+    }
+- id: estimacion_heridos
+  title: Estimación de la cantidad de heridos en accidentes de tránsito dentro de la provincia de Lima utilizando modelos de regresión lineal múltiple y PCA
+  authors: "Alisson Georgeth Avalos Tapia, Juan David Cárdenas Zúñiga, Rodrigo Fernando Caballero Chocano, and Víctor Andrés Ayma Quirita"
+  year: 2022
+  type: conference
+  venue: Actas del V Congreso Internacional de Ingeniería de Sistemas
+  venue_short: CIIS
+  citation: "pp. 91–109"
+  doi: 10.26439/ciis2022.6073
+  pdf: /files/papers/cardenas-2022-traffic-injuries.pdf
+  pdf_label: PDF
+  featured: false
+  personal_contribution: I developed the MATLAB analysis code, applied PCA, computed measures of model fit, and wrote the theoretical background and methodology. I also contributed to data preparation and encoding as part of a course project.
+  study_summary: A course-based study of traffic-injury estimation in Lima using multiple linear regression and PCA.
+  bibtex: |
+    @inproceedings{avalos2022heridos,
+      author = {Avalos Tapia, Alisson Georgeth and Cárdenas Zúñiga, Juan David and Caballero Chocano, Rodrigo Fernando and Ayma Quirita, Victor Andres},
+      title = {Estimación de la cantidad de heridos en accidentes de tránsito dentro de la provincia de Lima utilizando modelos de regresión lineal múltiple y {PCA}},
+      booktitle = {Actas del V Congreso Internacional de Ingeniería de Sistemas},
+      year = {2022},
+      pages = {91--109},
+      publisher = {Universidad de Lima},
+      doi = {10.26439/ciis2022.6073}
+    }
+- id: mcqueen
+  title: "Ambulancia McQueen: optimización de rutas para ambulancias a partir de la distancia entre el accidente y el centro de salud"
+  authors: "Alexia Shariann Ríos Alarcón, Carlos Felipe Mariños Oré, Andrea Isabel Nepo Gamero, Juan David Amado Cárdenas Zúñiga, and Víctor Andrés Ayma Quirita"
+  year: 2021
+  type: conference
+  venue: Actas del IV Congreso Internacional de Ingeniería de Sistemas
+  venue_short: CIIS
+  citation: "pp. 159–171"
+  doi: 10.26439/ciis2021.5583
+  pdf: /files/papers/cardenas-2021-ambulance-routing.pdf
+  pdf_label: PDF
+  featured: false
+  personal_contribution: I contributed to a university ambulance-routing prototype by collecting and manually validating geographic data and developing Python support components and a basic interface. The routing engine was implemented by another team member.
+  study_summary: A university prototype for selecting healthcare facilities and finding short ambulance routes using geographic data.
+  bibtex: |
+    @inproceedings{rios2021mcqueen,
+      author = {Ríos Alarcón, Alexia Shariann and Mariños Oré, Carlos Felipe and Nepo Gamero, Andrea Isabel and Cárdenas Zúñiga, Juan David Amado and Ayma Quirita, Victor Andres},
+      title = {Ambulancia {McQueen}: optimización de rutas para ambulancias a partir de la distancia entre el accidente y el centro de salud},
+      booktitle = {Actas del IV Congreso Internacional de Ingeniería de Sistemas},
+      year = {2021},
+      pages = {159--171},
+      publisher = {Universidad de Lima},
+      doi = {10.26439/ciis2021.5583}
+    }

@@ -1,0 +1,15 @@
+- id: thesis_unmixing
+  title: Hyperspectral Unmixing
+  category: Thesis
+  status: In progress
+  summary: My thesis project explores representation learning for hyperspectral unmixing. The work is in progress.
+- id: wetland_segmentation
+  title: Wetland Segmentation
+  category: Research
+  status: In progress
+  summary: An ongoing research project on wetland segmentation using satellite imagery and deep learning.
+- id: slbot
+  title: SLBot
+  category: Hobby
+  status: In progress
+  summary: A personal reinforcement learning project for Slither.io, developed as a hobby to explore agent learning and simulation.

@@ -1,0 +1,5 @@
+<div class="paper-links">
+  <a href="{{ include.paper.pdf | relative_url }}">{{ include.paper.pdf_label }} <span aria-hidden="true">↗</span></a>
+  <a href="https://doi.org/{{ include.paper.doi }}">DOI <span aria-hidden="true">↗</span></a>
+  {% if include.paper.code %}<a href="{{ include.paper.code }}">Code <span aria-hidden="true">↗</span></a>{% endif %}
+</div>

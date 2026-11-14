@@ -1,0 +1,27 @@
+---
+title: CV
+permalink: /cv/
+description: Education, research experience, academic honors, and downloadable curriculum vitae of Juan David Cárdenas.
+---
+<div class="shell">
+  <header class="page-heading cv-heading">
+    <div><p class="eyebrow">Education & experience</p><h1>Curriculum vitae.</h1><p class="page-lead">{{ site.data.profile.affiliation }}<br>Information Engineering · Peru</p></div>
+    <a class="button" href="{{ site.data.profile.cv | relative_url }}" download>Download full CV <span class="button-file">PDF · EN</span><span aria-hidden="true">↓</span></a>
+  </header>
+  <section class="cv-section" aria-labelledby="education-heading">
+    <h2 id="education-heading">Education</h2>
+    <div>{% for item in site.data.profile.education %}<article class="cv-entry"><p class="entry-date">{{ item.dates }}</p><h3>{{ item.institution }}</h3><p class="entry-role">{{ item.degree }} · {{ item.location }}</p><ul>{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul></article>{% endfor %}</div>
+  </section>
+  <section class="cv-section" aria-labelledby="experience-heading">
+    <h2 id="experience-heading">Experience</h2>
+    <div>{% for item in site.data.profile.experience %}<article class="cv-entry"><p class="entry-date">{{ item.dates }}</p><h3>{{ item.title }}</h3><p class="entry-role">{{ item.organization }}</p><p>{{ item.detail }}</p></article>{% endfor %}</div>
+  </section>
+  <section class="cv-section" aria-labelledby="honors-heading">
+    <h2 id="honors-heading">Scholarships<br>& honors</h2>
+    <div>{% for item in site.data.profile.honors %}<article class="cv-entry"><p class="entry-date">{{ item.year }}</p><h3>{{ item.title }}</h3><p>{{ item.detail }}</p></article>{% endfor %}</div>
+  </section>
+  <section class="cv-section" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Technical skills<br>& languages</h2>
+    <div class="skills-list">{% for item in site.data.profile.skills %}<div><h3>{{ item.area }}</h3><p>{{ item.tools }}</p></div>{% endfor %}<div><h3>Languages</h3><p>{{ site.data.profile.languages }}</p></div></div>
+  </section>
+</div>
