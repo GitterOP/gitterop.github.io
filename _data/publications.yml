@@ -57,6 +57,29 @@
       pages = {464},
       doi = {10.3390/socsci15070464}
     }
+- id: desercion_universitaria_scoping
+  title: "Predictive Modeling of University Dropout: A Scoping Review of the Last Decade (2015–2025)"
+  authors: "Walter Aliaga, Victor Hugo Ayma Quirita, Victor Andres Ayma Quirita, Juan David Cárdenas, Alexandra Sanjinez, and Fabrizzio Marin Colquichagua"
+  year: 2026
+  type: journal
+  venue: IEEE Access
+  venue_short: IEEE Access
+  citation: Early Access
+  doi: 10.1109/ACCESS.2026.3756227
+  pdf: /files/papers/cardenas-2026-university-dropout-review.pdf
+  pdf_label: PDF · Accepted author version
+  featured: false
+  personal_contribution: Building on the initial dataset and draft prepared by Alexandra Sanjinez, I designed and implemented a local-LLM workflow for screening and extraction. I was one of two reviewers of 300 abstracts, calculated screening metrics, and manually verified data from all 49 included studies. I adopted the scoping-review format, developed predictor-variable categories and the ethical analysis, and led responses to reviewers with team guidance. The coauthor team carried out the OULAD experiment.
+  study_summary: A scoping review of 49 studies on university dropout prediction, synthesizing modeling methods, predictor variables, and ethical issues, with a validated LLM-assisted screening protocol and a complementary OULAD experiment.
+  bibtex: |
+    @article{aliaga2026dropout,
+      author = {Aliaga, Walter and Ayma Quirita, Victor Hugo and Ayma Quirita, Victor Andres and Cárdenas, Juan David and Sanjinez, Alexandra and Marin Colquichagua, Fabrizzio},
+      title = {Predictive Modeling of University Dropout: A Scoping Review of the Last Decade (2015–2025)},
+      journal = {IEEE Access},
+      year = {2026},
+      note = {Early Access},
+      doi = {10.1109/ACCESS.2026.3756227}
+    }
 - id: presidential_sentiment
   title: "Peruvian Presidential Debates in the Elections of 2021 in Twitter/X: A Sentiment Analysis Approach"
   authors: "Víctor Andrés Ayma Quirita, Juan David Cárdenas, Walter Aliaga, Víctor Hugo Ayma Quirita, Aramis Palacios, and Rafaela B. Sierra"

@@ -11,13 +11,13 @@ description: Journal articles and conference papers by Juan David Cárdenas, wit
     <div class="section-jump"><a href="#journal-articles">Journal articles <span aria-hidden="true">↓</span></a><a href="#conference-papers">Conference papers <span aria-hidden="true">↓</span></a></div>
   </header>
   <section class="publication-section" aria-labelledby="journal-articles">
-    <div class="list-heading"><h2 id="journal-articles">Journal articles</h2><span>03 publications</span></div>
     {% assign papers = site.data.publications | where: 'type', 'journal' | sort: 'year' | reverse %}
+    <div class="list-heading"><h2 id="journal-articles">Journal articles</h2><span>{% if papers.size < 10 %}0{% endif %}{{ papers.size }} publications</span></div>
     {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
   </section>
   <section class="publication-section" aria-labelledby="conference-papers">
-    <div class="list-heading"><h2 id="conference-papers">Conference papers</h2><span>03 publications</span></div>
     {% assign papers = site.data.publications | where: 'type', 'conference' | sort: 'year' | reverse %}
+    <div class="list-heading"><h2 id="conference-papers">Conference papers</h2><span>{% if papers.size < 10 %}0{% endif %}{{ papers.size }} publications</span></div>
     {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
   </section>
 </div>

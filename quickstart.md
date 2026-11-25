@@ -10,7 +10,7 @@ Replace [the public CV](./files/cv/juan-david-cardenas-cv.pdf) to update the dow
 
 Edit [_data/publications.yml](./_data/publications.yml). Every entry has a stable identifier, original title, ordered authors, venue, year, DOI, public PDF path, personal contribution, and BibTeX. The two featured entries additionally contain research summaries and figure references.
 
-Place published article PDFs in [files/papers/](./files/papers/). Label an accepted author version explicitly. Check that each PDF matches its article before replacing a file. Figures belong in [assets/images/research/](./assets/images/research/) and need an alternative description, caption, and source.
+Place published article PDFs in [files/papers/](./files/papers/). Label an accepted author version explicitly. For Early Access articles, use `Early Access` in the citation and BibTeX note; add volume and page information when assigned by the publisher. Check that each PDF matches its article before replacing a file. Figures belong in [assets/images/research/](./assets/images/research/) and need an alternative description, caption, and source.
 
 Only report a result that can be traced to the published paper, and retain the conditions under which it was obtained. Contributions should continue to distinguish collaboration, supervision, and implementation.
 
@@ -25,7 +25,7 @@ ruby scripts/site.rb build
 python3 tests/check_site.py
 ```
 
-The checker covers local links and anchors, PDF access, publication counts, and the publishing boundaries of work in progress. Also review the layout on mobile and desktop, keyboard focus, and the six article downloads.
+The checker covers local links and anchors, PDF access, publication counts, and the publishing boundaries of work in progress. Also review the layout on mobile and desktop, keyboard focus, and the seven article downloads.
 
 ## GitHub Pages
 

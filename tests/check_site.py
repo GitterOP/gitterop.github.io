@@ -101,11 +101,11 @@ def main():
             checked += 1
 
     publications = pages.get((SITE / "publications/index.html").resolve())
-    expected_papers = {"dreamerv2_objetos", "subset_hsi", "presidential_sentiment", "impacto_migracion", "estimacion_heridos", "mcqueen"}
-    if not publications or len(publications.publications) != 6 or set(publications.publications) != expected_papers:
-        errors.append("Expected the six approved publications, once each")
-    elif len({link for link in publications.links if link.startswith("https://doi.org/")}) != 6:
-        errors.append("Expected six distinct publication DOI links")
+    expected_papers = {"dreamerv2_objetos", "subset_hsi", "presidential_sentiment", "impacto_migracion", "estimacion_heridos", "mcqueen", "desercion_universitaria_scoping"}
+    if not publications or len(publications.publications) != len(expected_papers) or set(publications.publications) != expected_papers:
+        errors.append(f"Expected the {len(expected_papers)} approved publications, once each")
+    elif len({link for link in publications.links if link.startswith("https://doi.org/")}) != len(expected_papers):
+        errors.append(f"Expected {len(expected_papers)} distinct publication DOI links")
 
     research = pages.get((SITE / "research/index.html").resolve())
     expected_current = {"thesis_unmixing", "wetland_segmentation", "slbot"}
@@ -119,8 +119,8 @@ def main():
                 errors.append(f"Unexpected results or links in unpublished project: {project['id']}")
 
     pdfs = list(SITE.rglob("*.pdf"))
-    if len(pdfs) != 7:
-        errors.append(f"Expected CV plus six papers; found {len(pdfs)} PDFs")
+    if len(pdfs) != len(expected_papers) + 1:
+        errors.append(f"Expected CV plus {len(expected_papers)} papers; found {len(pdfs)} PDFs")
     for path in pdfs:
         with path.open("rb") as document:
             if document.read(5) != b"%PDF-":
@@ -139,7 +139,7 @@ def main():
     if errors:
         print("\n".join(f"FAIL: {error}" for error in errors))
         raise SystemExit(1)
-    print(f"PASS: {len(pages)} pages, {checked} local links, six publications, three summary-only projects, seven PDFs; public-output boundaries verified.")
+    print(f"PASS: {len(pages)} pages, {checked} local links, {len(expected_papers)} publications, three summary-only projects, {len(pdfs)} PDFs; public-output boundaries verified.")
 
 
 if __name__ == "__main__":

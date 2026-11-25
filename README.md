@@ -1,6 +1,6 @@
 # Juan David Cárdenas Z. — Academic website
 
-Personal academic website built with Jekyll and a lightweight adaptation of Academic Pages. Content is in English, with a portrait and a persistent dark/light theme switch. It includes six publications, a downloadable CV, and short descriptions of three projects in progress.
+Personal academic website built with Jekyll and a lightweight adaptation of Academic Pages. Content is in English, with a portrait and a persistent dark/light theme switch. It includes seven publications (one in Early Access), a downloadable CV, and short descriptions of three projects in progress.
 
 ## Run locally
 
